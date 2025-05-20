@@ -1,0 +1,69 @@
+header,
+main {
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    /* Los centramos */
+    padding-bottom: 1.2em;
+}
+
+header img,
+main img {
+    margin: auto;
+    /* Para centrarlas */
+    display: block;
+    /* Para que lo de centrarse funcione ya que img es un elemento en línea */
+}
+
+header img {
+    width: 90%;
+    /* Como las imágenes son muy grandes, 
+        le damos un ancho en % para que no se salgan por fuera*/
+}
+
+section figure img {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+section h2,
+section p {
+    padding: 0 1rem;
+    /* rem se refiere siempre al tamaño de la letra del body */
+}
+
+section h2 {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+section p,
+section figcaption,
+section hr {
+    color: white;
+}
+
+section figcaption {
+    font-size: 0.8em;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: solid 1px black;
+    padding: 0.5em;
+    display: inline-block;
+}
+nav a:hover {
+    background-color:cornsilk;
+}

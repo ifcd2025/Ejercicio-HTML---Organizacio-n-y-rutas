@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(180, 155, 15);
+}
+h1 {
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: #181818 3px 5px 2px;
+    color: #FFFFFF;
+}
+.boton {
+    background-color: orange;
+    width: 20%;
+    min-width: 300px; /* Mínimo 300 píxeles de ancho */
+    margin: 20px auto; /* Para centrarlo horizontalmente con auto*/
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Solo los bordes superiores */
+}
+.boton:hover {
+    background-color: rgb(211, 144, 20);
+}
+.boton a {
+    /* outline: solid; pone un borde que no suma. 
+    Útil para ver el tamaño de una caja */
+    padding: 0.7em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    /* Los elementos en línea no se les puede aplicar width,
+    con lo que lo convertimos en un elemento en bloque */
+    width: 100%; /* Al ser bloque, ya ocupa un 100% de ancho, con lo que no haría faltar poner el width */
+    display: block;
+    /* Por defecto el padding y el borde se suma al width,
+    con lo que el enlace se sale por fuera de la caja, ya
+    que tenemos un width de 100% y un padding de 0.7em.
+    Usando border-box, el padding y el borde no suma */
+    box-sizing:border-box;
+}
